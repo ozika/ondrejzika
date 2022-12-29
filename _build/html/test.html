@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>test</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/portrait.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Ondřej Zíka
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="bio.html">
+   <table>
+    <tr>
+     <a href="https://twitter.com/OndrejZika">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh46i9wH7x3hhR2ertwF1LA1uBPVB0KThqp0hfp3hgxw&amp;s" width="35px"/>
+     </a>
+     <a href="https://mastodon.online/@OndrejZika">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mastodon_Logotype_%28Simple%29.svg/1907px-Mastodon_Logotype_%28Simple%29.svg.png" width="35px"/>
+     </a>
+     <a href="https://scholar.google.com/citations?user=lk5DtbEAAAAJ&amp;hl=en">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="35px"/>
+     </a>
+    </tr>
+   </table>
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  about me
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="cv.html">
+   CV
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  research
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="rese_projects.html">
+   Research interests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pubs.html">
+   Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="colabs.html">
+   Collaborators and funding
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  non-academic projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="projects.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="carsharing.html">
+     Berlin Carsharing App
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="packages.html">
+   Software
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  blog
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="blogposts.html">
+   Posts
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/test.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftest.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/test.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#phd-thesis">
+   PhD thesis
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>test</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#phd-thesis">
+   PhD thesis
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="test">
+<h1>test<a class="headerlink" href="#test" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>test <code class="docutils literal notranslate"><span class="pre">:uk:</span></code></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">&amp;#9785;</span></code></p>
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference external" href="https://example.com"><span>https://example.com</span></a></p>
+<p>Free icons:</p>
+<p><a class="reference external" href="https://fontawesome.com/v6/search?o=r&amp;m=free">https://fontawesome.com/v6/search?o=r&amp;m=free</a></p>
+<p>Custom color class <code class="docutils literal notranslate"><span class="pre">customcolor</span></code> defined in <code class="docutils literal notranslate"><span class="pre">_static/custom.css</span></code></p>
+<ul class="simple">
+<li><p>An icon <span class="fas fa-bolt solid;customcolor"></span>, some more text.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Here is a note!</p>
+</div>
+<p><span class="sd-sphinx-override sd-badge">plain badge</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">primary</span>, <span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">primary-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">secondary</span>, <span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">secondary-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">success</span>, <span class="sd-sphinx-override sd-badge sd-outline-success sd-text-success">success-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">info</span>, <span class="sd-sphinx-override sd-badge sd-outline-info sd-text-info">info-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">gg c-green</span>, <span class="sd-sphinx-override sd-badge sd-outline-warning sd-text-warning">warning-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">danger</span>, <span class="sd-sphinx-override sd-badge sd-outline-danger sd-text-danger">danger-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">light</span>, <span class="sd-sphinx-override sd-badge sd-outline-light sd-text-light">light-line</span></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-dark sd-bg-text-dark">dark</span>, <span class="sd-sphinx-override sd-badge sd-outline-dark sd-text-dark">dark-line</span></p>
+<p><span id="id1">[<a class="reference internal" href="#id14">Morriss, Abend, Zika, Bradford, and Mertens, 2022</a>]</span></p>
+<p><span id="id2">[<a class="reference internal" href="#id15">Koch, Zika, and Schuck, 2022</a>]</span></p>
+<p><span id="id3">[<a class="reference internal" href="#id13" title="Ondrej Zika, Katja Wiech, Andrea Reinecke, Michael Browning, and Nicolas W. Schuck. Trait anxiety is associated with hidden state inference during aversive reversal learning. bioRxiv, 2022. URL: https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303, arXiv:https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf, doi:10.1101/2022.04.01.483303.">Zika, Wiech, Reinecke, Browning, and Schuck, 2022</a>]</span></p>
+<p><span id="id4">[<a class="reference internal" href="#id12" title="Christopher Gagne, Ondrej Zika, Peter Dayan, and Sonia J Bishop. Impaired adaptation of learning to contingency volatility in internalizing psychopathology. eLife, 9:e61387, dec 2020. URL: https://doi.org/10.7554/eLife.61387, doi:10.7554/eLife.61387.">Gagne, Zika, Dayan, and Bishop, 2020</a>]</span></p>
+<p><span id="id5">[<a class="reference internal" href="#id11" title="Janine D. Bijsterbosch, Tahereh L. Ansari, Stephen Smith, Oliver Gauld, Ondrej Zika, Sirius Boessenkool, Michael Browning, Andrea Reinecke, and Sonia J. Bishop. Stratification of mdd and gad patients by resting state brain connectivity predicts cognitive bias. NeuroImage: Clinical, 19:425-433, 2018. URL: https://www.sciencedirect.com/science/article/pii/S2213158218301426, doi:https://doi.org/10.1016/j.nicl.2018.04.033.">Bijsterbosch, Ansari, Smith, Gauld, Zika, Boessenkool, Browning, Reinecke, and Bishop, 2018</a>]</span></p>
+<p><span id="id6">[<a class="reference internal" href="#id9" title="Daniel McNamee, Mimi Liljeholm, Ondrej Zika, and John P. O'Doherty. Characterizing the associative content of brain structures involved in habitual and goal-directed actions in humans: a multivariate fmri study. Journal of Neuroscience, 35(9):3764–3771, 2015. URL: https://www.jneurosci.org/content/35/9/3764, arXiv:https://www.jneurosci.org/content/35/9/3764.full.pdf, doi:10.1523/JNEUROSCI.4677-14.2015.">McNamee, Liljeholm, Zika, and O'Doherty, 2015</a>]</span></p>
+<p><span id="id7">[<a class="reference internal" href="#id10" title="Shan Gao, Ondrej Zika, Robert D. Rogers, and Guillaume Thierry. Second language feedback abolishes the \textquotedblleft hot hand\textquotedblright  effect during even-probability gambling. Journal of Neuroscience, 35(15):5983–5989, 2015. URL: https://www.jneurosci.org/content/35/15/5983, arXiv:https://www.jneurosci.org/content/35/15/5983.full.pdf, doi:10.1523/JNEUROSCI.3622-14.2015.">Gao, Zika, Rogers, and Thierry, 2015</a>]</span></p>
+<section id="phd-thesis">
+<h2>PhD thesis<a class="headerlink" href="#phd-thesis" title="Permalink to this headline">#</a></h2>
+<p>Zika, O. (2019). Computational and neural mechanisms of human aversive learning [PhD thesis]. University of Oxford.</p>
+<div class="docutils container" id="id8">
+<dl class="citation">
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
+<dd><p>Janine D. Bijsterbosch, Tahereh L. Ansari, Stephen Smith, Oliver Gauld, Ondrej Zika, Sirius Boessenkool, Michael Browning, Andrea Reinecke, and Sonia J. Bishop. Stratification of mdd and gad patients by resting state brain connectivity predicts cognitive bias. <em>NeuroImage: Clinical</em>, 19:425–433, 2018. URL: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S2213158218301426">https://www.sciencedirect.com/science/article/pii/S2213158218301426</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.nicl.2018.04.033">doi:https://doi.org/10.1016/j.nicl.2018.04.033</a>.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
+<dd><p>Christopher Gagne, Ondrej Zika, Peter Dayan, and Sonia J Bishop. Impaired adaptation of learning to contingency volatility in internalizing psychopathology. <em>eLife</em>, 9:e61387, dec 2020. URL: <a class="reference external" href="https://doi.org/10.7554/eLife.61387">https://doi.org/10.7554/eLife.61387</a>, <a class="reference external" href="https://doi.org/10.7554/eLife.61387">doi:10.7554/eLife.61387</a>.</p>
+</dd>
+<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id7">3</a></span></dt>
+<dd><p>Shan Gao, Ondrej Zika, Robert D. Rogers, and Guillaume Thierry. Second language feedback abolishes the \textquotedblleft hot hand\textquotedblright  effect during even-probability gambling. <em>Journal of Neuroscience</em>, 35(15):5983–5989, 2015. URL: <a class="reference external" href="https://www.jneurosci.org/content/35/15/5983">https://www.jneurosci.org/content/35/15/5983</a>, <a class="reference external" href="https://arxiv.org/abs/https://www.jneurosci.org/content/35/15/5983.full.pdf">arXiv:https://www.jneurosci.org/content/35/15/5983.full.pdf</a>, <a class="reference external" href="https://doi.org/10.1523/JNEUROSCI.3622-14.2015">doi:10.1523/JNEUROSCI.3622-14.2015</a>.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id2">4</a></span></dt>
+<dd><p><strong>missing journal in 2022:koch</strong></p>
+</dd>
+<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id6">5</a></span></dt>
+<dd><p>Daniel McNamee, Mimi Liljeholm, Ondrej Zika, and John P. O'Doherty. Characterizing the associative content of brain structures involved in habitual and goal-directed actions in humans: a multivariate fmri study. <em>Journal of Neuroscience</em>, 35(9):3764–3771, 2015. URL: <a class="reference external" href="https://www.jneurosci.org/content/35/9/3764">https://www.jneurosci.org/content/35/9/3764</a>, <a class="reference external" href="https://arxiv.org/abs/https://www.jneurosci.org/content/35/9/3764.full.pdf">arXiv:https://www.jneurosci.org/content/35/9/3764.full.pdf</a>, <a class="reference external" href="https://doi.org/10.1523/JNEUROSCI.4677-14.2015">doi:10.1523/JNEUROSCI.4677-14.2015</a>.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id1">6</a></span></dt>
+<dd><p><strong>missing journal in 2022:morris</strong></p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id3">7</a></span></dt>
+<dd><p>Ondrej Zika, Katja Wiech, Andrea Reinecke, Michael Browning, and Nicolas W. Schuck. Trait anxiety is associated with hidden state inference during aversive reversal learning. <em>bioRxiv</em>, 2022. URL: <a class="reference external" href="https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303">https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303</a>, <a class="reference external" href="https://arxiv.org/abs/https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf">arXiv:https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf</a>, <a class="reference external" href="https://doi.org/10.1101/2022.04.01.483303">doi:10.1101/2022.04.01.483303</a>.</p>
+</dd>
+</dl>
+</div>
+<p>Morriss, J., Abend, R., <strong>Zika, O.</strong>, Bradford, D. E., &amp; Mertens, G. (2022, <em>preprint</em>). Neural and psychophysiological markers of intolerance of uncertainty. <a class="reference external" href="https://doi.org/10.31234/osf.io/kpbn2">https://doi.org/10.31234/osf.io/kpbn2</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">uncertainty</span></p>
+<p>Koch, C., <strong>Zika, O.</strong>, &amp; Schuck, N. W. (2022, <em>preprint</em>). Influence of surprise on reinforcement learning in younger and older adults. <a class="reference external" href="https://doi.org/10.31234/osf.io/unx5y">https://doi.org/10.31234/osf.io/unx5y</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-dark sd-bg-text-dark">ageing</span> <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">modelling</span> <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span></p>
+<p><strong>Zika, O.</strong>, Wiech, K. A., Reinecke, A., Browning, M. and Schuck, N. W. (2022, <em>preprint</em>). Trait anxiety is associated with hidden state inference during aversive reversal learning. <a class="reference external" href="https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf">https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">anxiety</span> <span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">uncertainty</span> <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">modelling</span> <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span></p>
+<p>Gagne, Ch., <strong>Zika, O.</strong>, Dayan, P. and Bishop, S. J. (2020). Impaired adaptation of learning to contingency volatility in internalizing psychopathology. <em>eLife</em>, 9:e61387. <a class="reference external" href="https://doi.org/10.7554/eLife.61387">https://doi.org/10.7554/eLife.61387</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">mental health</span> <span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">modelling</span> <span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">uncertainty</span> <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span></p>
+<p>Bijsterbosch, J. D., Ansari, T. L., Smith, S., Gauld, O., <strong>Zika, O.</strong>, Boessenkool, S., Browning, M., Reinecke, A. and Bishop, S. J. (2018) Stratification of mdd and gad patients by resting state brain connectivity predicts cognitive bias. <em>NeuroImage: Clinical</em>, 19:425–433. <a class="reference external" href="https://doi.org/10.1016/j.nicl.2018.04.033">https://doi.org/10.1016/j.nicl.2018.04.033</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">anxiety</span> <span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">neuroimaging</span></p>
+<p>Gao, S., <strong>Zika, O.</strong>, Rogers, R. D. and Thierry, G. (2015). Second language feedback abolishes the hot hand effect during even-probability gambling. <em>Journal of Neuroscience</em>, 35(15):5983–5989. <a class="reference external" href="https://www.jneurosci.org/content/35/15/5983">https://www.jneurosci.org/content/35/15/5983</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">uncertainty</span> <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span></p>
+<p>McNamee, D., Liljeholm, M., <strong>Zika, O.</strong> and O’Doherty, J. (2015). Characterizing the associative content of brain structures involved in habitual and goal-directed actions in humans: a multivariate fmri study. <em>Journal of Neuroscience</em>, 35(9):3764–3771. <a class="reference external" href="https://www.jneurosci.org/content/35/9/3764">https://www.jneurosci.org/content/35/9/3764</a><br />
+<span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">neuroimaging</span> <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

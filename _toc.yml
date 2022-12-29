@@ -1,0 +1,28 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption:  
+    chapters:
+    - file: bio
+  - caption: about me
+    chapters:
+    - file: cv
+  - caption: research
+    chapters:
+    - file: rese_projects
+    - file: pubs
+    - file: colabs
+  - caption: non-academic projects
+    chapters:
+    - file: projects 
+      sections:
+      - file: carsharing
+    - file: packages
+  - caption: blog
+    chapters:
+    - file: blogposts
+    #- file: tutorials
+    #- file: test
