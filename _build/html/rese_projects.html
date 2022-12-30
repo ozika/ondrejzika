@@ -43,6 +43,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script src="_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -51,6 +52,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="www.ondrejzika.cz/rese_projects.html" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Publications" href="pubs.html" />
@@ -61,6 +64,14 @@ const thebe_selector_output = ".output, .cell_output"
 
     <!-- Google Analytics -->
     
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8RSB8MRRGF"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-8RSB8MRRGF');
+                </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -74,7 +85,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
+<div class="announcement header-item noprint">None</div>
 <div class="header header-item noprint"></div>
 
     
@@ -114,7 +125,11 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="bio.html">
+  <a class="reference internal" href="empty.html">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logos.html">
    <table>
     <tr>
      <a href="https://twitter.com/OndrejZika">
@@ -127,10 +142,14 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="35px"/>
      </a>
      <a href="https://github.com/ozika">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="35px"/>
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="42px"/>
      </a>
     </tr>
    </table>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="empty2.html">
   </a>
  </li>
 </ul>
@@ -199,7 +218,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  blog
+  posts and code
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -208,16 +227,34 @@ const thebe_selector_output = ".output, .cell_output"
    Posts
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="snippets.html">
+   Snippets
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snippets/ssh.html">
+     Setting up SSH keys
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snippets/virtualenv.html">
+     Virtual environment in Python/R
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </div>
 </nav></div>
         <div class="bd-sidebar__bottom">
              <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
             
         </div>
     </div>
@@ -267,7 +304,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/rese_projects.ipynb"
+        <a href="https://mybinder.org/v2/gh/ozika/ondrejzika/master?urlpath=tree/docs/rese_projects.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -301,51 +338,6 @@ title="Fullscreen mode"
   </span>
 
 </button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Frese_projects.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 <div class="menu-dropdown menu-dropdown-download-buttons">
   <button class="headerbtn menu-dropdown__trigger"
@@ -438,11 +430,11 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-effect-of-angiotensin-ii-receptor-blocker-on-aversive-learning">
+    <a class="reference internal nav-link" href="#the-effect-of-angiotensin-ii-receptor-blockade-on-aversive-learning">
      <span class="fas fa-pills pillcolor">
      </span>
      <strong>
-      The effect of angiotensin-II receptor blocker on aversive learning
+      The effect of angiotensin-II receptor blockade on aversive learning
      </strong>
     </a>
    </li>
@@ -532,11 +524,11 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-effect-of-angiotensin-ii-receptor-blocker-on-aversive-learning">
+    <a class="reference internal nav-link" href="#the-effect-of-angiotensin-ii-receptor-blockade-on-aversive-learning">
      <span class="fas fa-pills pillcolor">
      </span>
      <strong>
-      The effect of angiotensin-II receptor blocker on aversive learning
+      The effect of angiotensin-II receptor blockade on aversive learning
      </strong>
     </a>
    </li>
@@ -611,11 +603,11 @@ title="Print to PDF"
 <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">anxiety</span>
 <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span>
 <span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">uncertainty</span><br />
-In this project we investigate how people varying in trait anxiety learn and how they represent aversive environments. We use a task characterised by alternating periods of relative safety and threat. To make predictions about probability of receiving shock on the next trial, one can either keep track of current shock probability in a trial-by-trial manner (using reinforcement learning-like mechanism), or, alternatively, one can learn that there are regular changes in shock probabilities and leverage this information to make more accurate predictions. Using computational models to characterise the two processes, we found that people higher in trait anxiety have a tendency to extract such latent structures. While this means that high trait anxious participants are better at extracting such higher-order structures, it might also mean that they are more likely to experience return-of-fear phenomena such as spontaneous recovery or reinstatement. <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2022.04.01.483303v4.abstract"><strong>Zika et al., 2022</strong></a></p>
+In this project we investigate how people varying in trait anxiety learn and how they represent aversive environments. We use a task characterised by alternating periods of relative safety and threat. To make predictions about probability of receiving shock on the next trial, one can either keep track of current shock probability in a trial-by-trial manner (using reinforcement learning-like mechanism), or, alternatively, one can learn that there are regular changes in shock probabilities and leverage this information to make more accurate predictions. Using computational models to characterise the two processes, we found that people higher in trait anxiety have a tendency to extract such latent structures. While this means that high trait anxious participants are better at following the experimental contingencies, it might also mean that they are more likely to experience return-of-fear phenomena such as spontaneous recovery or reinstatement. <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2022.04.01.483303v4.abstract"><strong>Zika et al., 2022</strong></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>People</strong> <a class="reference external" href="https://schucklab.gitlab.io/">Nico Schuck</a>, <a class="reference external" href="https://www.ndcn.ox.ac.uk/team/katja-wiech">Katja Wiech</a>, <a class="reference external" href="https://www.psych.ox.ac.uk/team/michael-browning">Michael Browning</a> and <a class="reference external" href="https://www.psych.ox.ac.uk/team/andrea-reinecke">Andrea Reinecke</a>
-<strong>Influences/inspirations</strong> <a class="reference external" href="https://psycnet.apa.org/doiLanding?doi=10.1037%2F0033-295X.114.3.784">David Redish and colleagues</a>, <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fnbeh.2013.00164/full">Sam Gershman and colleagues</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/26100524/">Catherine Hartley</a> and <a class="reference external" href="https://www.nature.com/articles/s41467-020-17977-w">Toby Wise</a> to name but few.
+<strong>Influences/inspirations</strong> <a class="reference external" href="https://psycnet.apa.org/doiLanding?doi=10.1037%2F0033-295X.114.3.784">David Redish and colleagues</a>, <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fnbeh.2013.00164/full">Sam Gershman and colleagues</a>, <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/26100524/">Catherine Hartley</a> and <a class="reference external" href="https://www.nature.com/articles/s41467-020-17977-w">Toby Wise</a> to name but few.<br />
 <strong>Relates to</strong> <a class="reference external" href="https://www.cambridge.org/core/journals/psychological-medicine/article/abs/latent-cause-inference-during-extinction-learning-in-traumaexposed-individuals-with-and-without-ptsd/0C9F33A2C608F1584AE23048A7937D53">Norbury and colleagues</a>, <a class="reference external" href="https://www.nature.com/articles/s41467-021-26731-9">Piray and Daw</a></p>
 </div>
 </section>
@@ -633,8 +625,8 @@ In this project we ask the question how does the orbitofrontal cortext integrate
 </div>
 </section>
 <hr class="docutils" />
-<section id="the-effect-of-angiotensin-ii-receptor-blocker-on-aversive-learning">
-<h3><span class="fas fa-pills pillcolor"></span> <strong>The effect of angiotensin-II receptor blocker on aversive learning</strong><a class="headerlink" href="#the-effect-of-angiotensin-ii-receptor-blocker-on-aversive-learning" title="Permalink to this headline">#</a></h3>
+<section id="the-effect-of-angiotensin-ii-receptor-blockade-on-aversive-learning">
+<h3><span class="fas fa-pills pillcolor"></span> <strong>The effect of angiotensin-II receptor blockade on aversive learning</strong><a class="headerlink" href="#the-effect-of-angiotensin-ii-receptor-blockade-on-aversive-learning" title="Permalink to this headline">#</a></h3>
 <p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">modelling</span>
 <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">learning and choice</span><br />
 The commonly prescribed blood pressure medication losartan (angiotensin-II receptor blocker) has recently been linked to reduction in fear learning, including lower chance of developing PTSD in war veterans. Here, we use double-blind design and probabilistic aversive learning task over three sessions to investigate the role of losartan in aversive learning.</p>

@@ -1,2 +1,9 @@
+to push to gh-pages branch
+`ghp-import -n -p -f _build/html`
+
+Check DNS records
+dig www.ondrejzika.cz +nostats +nocomments +nocmd
+
+
 generates config.py
 jupyter-book config sphinx .

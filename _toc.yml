@@ -6,7 +6,10 @@ root: intro
 parts:
   - caption:  
     chapters:
-    - file: bio
+    - file: empty
+    - file: logos
+    - file: empty2
+    #- file: follow
   - caption: about me
     chapters:
     - file: cv
@@ -21,8 +24,12 @@ parts:
       sections:
       - file: carsharing
     - file: packages
-  - caption: blog
+  - caption: posts and code
     chapters:
     - file: blogposts
+    - file: snippets
+      sections:
+      - file: snippets/ssh
+      - file: snippets/virtualenv
     #- file: tutorials
     #- file: test
