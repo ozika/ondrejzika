@@ -9,5 +9,6 @@ I strive to make science inclusive and supportive for everyone. I very much welc
 
 P.S.: [**ř**](https://www.youtube.com/watch?v=V9LQDTiDcrA) is a great sound, I know. And no, I don't expect anyone to try to pronounce it :)   
 
-
-# add this zika-related anxiety https://pubmed.ncbi.nlm.nih.gov/29063232/
+<!---
+// add this zika-related anxiety https://pubmed.ncbi.nlm.nih.gov/29063232/
+-->
