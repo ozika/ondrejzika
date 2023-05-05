@@ -395,6 +395,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-funcs">
+   basic funcs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#linear-models">
    linear models
   </a>
@@ -405,6 +410,11 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-manipulations">
+   data manipulations
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ggplot">
@@ -431,6 +441,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-funcs">
+   basic funcs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#linear-models">
    linear models
   </a>
@@ -441,6 +456,11 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-manipulations">
+   data manipulations
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ggplot">
@@ -459,12 +479,34 @@ title="Print to PDF"
                 
   <section id="different-useful-snippets-in-r">
 <h1>Different useful snippets in R<a class="headerlink" href="#different-useful-snippets-in-r" title="Permalink to this headline">#</a></h1>
+<section id="basic-funcs">
+<h2>basic funcs<a class="headerlink" href="#basic-funcs" title="Permalink to this headline">#</a></h2>
+<p><strong>standard error</strong></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
 <section id="linear-models">
 <h2>linear models<a class="headerlink" href="#linear-models" title="Permalink to this headline">#</a></h2>
 <section id="generate-mixed-effect-model-equation">
 <h3>Generate mixed effect model equation<a class="headerlink" href="#generate-mixed-effect-model-equation" title="Permalink to this headline">#</a></h3>
 <script src="https://gist.github.com/ozika/f9045775a5cff21f69c7ef2336cd773d.js"></script>
 </section>
+</section>
+<section id="data-manipulations">
+<h2>data manipulations<a class="headerlink" href="#data-manipulations" title="Permalink to this headline">#</a></h2>
+<p>Split continuous to categorical at specific breakponts</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">tdf</span><span class="o">&lt;-</span> <span class="n">tdf</span> <span class="o">%&gt;%</span> 
+  <span class="nf">mutate</span><span class="p">(</span>
+    <span class="n">wave</span> <span class="o">=</span> <span class="nf">case_when</span><span class="p">(</span>
+        <span class="n">session</span> <span class="o">&lt;</span> <span class="m">6</span> <span class="o">~</span> <span class="s">&quot;first_wave&quot;</span><span class="p">,</span>   
+        <span class="n">session</span> <span class="o">&gt;=</span> <span class="m">6</span> <span class="o">&amp;</span> <span class="n">session</span> <span class="o">&lt;</span> <span class="m">14</span> <span class="o">~</span> <span class="s">&quot;summer_nowave&quot;</span><span class="p">,</span> 
+        <span class="n">session</span> <span class="o">&gt;=</span> <span class="m">14</span> <span class="o">~</span> <span class="s">&quot;second_wave&quot;</span>
+        
+    <span class="p">)</span>
+  <span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ggplot">
 <h2>ggplot<a class="headerlink" href="#ggplot" title="Permalink to this headline">#</a></h2>
