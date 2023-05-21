@@ -27,8 +27,11 @@ parts:
   - caption: posts and code
     chapters:
     - file: blogposts
+      sections:
+      - file: articles/plotting_graphs_with_python/plotting_graphs_with_python
     - file: snippets
       sections:
+      - file: snippets/r_snippets
       - file: snippets/ssh
       - file: snippets/virtualenv
     #- file: tutorials

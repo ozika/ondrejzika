@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title></title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/custom.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="www.ondrejzika.cz/mh.html" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8RSB8MRRGF"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-8RSB8MRRGF');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">None</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/portrait.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Ondřej Zíka
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="empty.html">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logos.html">
+   <table>
+    <tr>
+     <a href="https://twitter.com/OndrejZika">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh46i9wH7x3hhR2ertwF1LA1uBPVB0KThqp0hfp3hgxw&amp;s" width="35px"/>
+     </a>
+     <a href="https://mastodon.online/@OndrejZika">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mastodon_Logotype_%28Simple%29.svg/1907px-Mastodon_Logotype_%28Simple%29.svg.png" width="35px"/>
+     </a>
+     <a href="https://scholar.google.com/citations?user=lk5DtbEAAAAJ&amp;hl=en">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="35px"/>
+     </a>
+     <a href="https://github.com/ozika">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="42px"/>
+     </a>
+    </tr>
+   </table>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="empty2.html">
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  about me
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="cv.html">
+   CV
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  research
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="rese_projects.html">
+   Research interests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pubs.html">
+   Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="colabs.html">
+   Collaborators and funding
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  non-academic projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="projects.html">
+   Projects
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="carsharing.html">
+     Berlin Carsharing App
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="packages.html">
+   Software
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  posts and code
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="blogposts.html">
+   Posts
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="articles/plotting_graphs_with_python/plotting_graphs_with_python.html">
+     Plotting networks with python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="snippets.html">
+   Snippets
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snippets/r_snippets.html">
+     Different useful snippets in R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snippets/ssh.html">
+     Setting up SSH keys
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="snippets/virtualenv.html">
+     Virtual environment in Python/R
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/mh.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<p>Here, I’d like to share a few ideas relating to mental health and communication in science environments. These are just my own observations, the sort of things that I wish that someone made explicit to me years ago as I moved from “the east” to “the west”. I am not exactly sure why I am writing this, perhaps because I am often reminded that we can still do better, despite some improvements in these areas.</p>
+<p><strong>Inclusivity</strong></p>
+<p><em>Listening</em></p>
+<p>Much of what I am about to say is will be trivial to many. The sort of thing that is self-evident and not even worth mentioning. However, I believe that a daily reminder is in order. A daily reminder that our own background and the culture of science are <em>not</em> what most people in the world experience. A certain type of communication might seem the only appropriate one to us, however, to a person from another side of the planet (or a neighbouring town as a matter of fact!), this is just <em>one of the many</em> plausible ways to express a comment/question. I think it is our job to listen, make an effort to clarify, to explain the trivial, even if it means that we get 30 mins less for our “actual work”. I think most people would agree with this point, <em>to a degree</em> and <em>in principle</em> at least. In practice, we might often be too busy to really listen. This is not surprising, the incentives that we face in academia are somwhere else, analyses must be coded, papers written, grants submitted. I would, however, argue that the <em>time</em> it takes to talk to a person is time <em>better</em> spent and that it in fact does not constitute “excessive time burden” that our brain might be trying to tell us. Perhaps this is just my experience, but a single conversation or an act of understanding can easily turn the course of one’s life. Let me follow with a personal anecdote. While I was a second year bachelor student at Aberystwyth working in McDonald’s for 5.67/hr, we had a professor visiting from a bigger university where they did “actual research”. He gave a talk one day, after which I came to him and asked a question. Next day, while climbing the unforgiving Penglais hill, the professor stopped and offered me a lift to the department. On the way, he also invited me to come over to his lab and learn more about neuroscience and psychology research. I was shocked, I didn’t know professors had time to interact with students in such personal way, yet, it completely shifted my vision of what was possible. Suddenly, there existed a possibility that what I have been reading about in books could be my life. Without a doubt, the fact that he made that decision to stop (on a <a class="reference external" href="https://www.highwaycodeuk.co.uk/road-markings.html">double red</a> btw :p) enabled me to later do my first EEG project, go to US, Oxford, etc. etc. Unfortunately, this is a one in hundred experience that I have had with professors. Also while a bachelor student, I had the opportunity to attended several dinners with “very famous and prominent” scientists. On nearly every single one of them, I made an “inappropriate” or “illogical” comment/joke. These would not necessary be inappropriate/illogical, but because of language and cultural barriers the essence of what I was trying to say either didn’t come across, it lacked nuance and cultural context. What stuck with me the most is the reaction I would get from people. Apart from the general awkwardness, there was a noticeable displeasure/anger from seniority. You can imagine how does an insecure student feel when the big professor is displeased with them. Of course, most insteractions fall somewhere in between the two. The point that I am tryng to make is that every conversation (or situation) is important, and it is crucial to be midful of a person, the situation, context.
+I gave the example of being a student, but I think this is equally true for all interactions. It concerns other situations such as group dynamics. A good example that keeps popping up is the “going for lunch” situation. Groups tend to go together. In Oxford, students/postdocs would sit in a open plan area mixed across groups. I remember the daily theater of individual groups trying to find their members and go for lunch together while people from small groups or visiting researchers easily ended up having 180/200 meals alone. I am not saying that one has to sacrifice their work for any of this, I just want to highlight that a tad more mindfulness can go very far, and that, in fact, it will very likely make the “science” better.</p>
+<p><strong>Understanding</strong>
+Life of every individual is different. Just because I have a conception of what it is to be human does not guarantee that I understand what another person is experiencing. Following from my previous point, it is very simple to apply one’s own mental models to what a person is telling us, dismissing what we are actually being told in the process. I think it requires constant awareness and midfulness, it’s probably what our brains</p>
+<p><strong>Openness</strong>
+Not the kind of openness “I only got 3 out of 10 top-tier multi-mill grants”
+people who are completely different publically and privately</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

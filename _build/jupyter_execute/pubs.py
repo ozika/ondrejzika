@@ -18,17 +18,21 @@
 # 
 # ### Journal articles
 # 
+# **Zika, O.** (2023, preprint). The relationship between latent state inference and intolerance of uncertainty.
+# {bdg-primary}`uncertainty` {bdg-warning}`modelling` {bdg-secondary}`learning and choice` 
 # 
-# Morriss, J., Abend, R., **Zika, O.**, Bradford, D. E., & Mertens, G. (2022, *preprint*). Neural and psychophysiological markers of intolerance of uncertainty. https://doi.org/10.31234/osf.io/kpbn2   
+# **Zika, O.**, Appel, J., Klinge, C., Shkreli, L., Browning, M., Wiech, K. A. and Reinecke, A. (*submitted*). Reduction of aversive learning rates by Angiotensin II antagonist losartan.  
+# {bdg-info}`mental health` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`  
+# 
+# **Zika, O.**, Wiech, K. A., Reinecke, A., Browning, M. and Schuck, N. W. (2023). Trait anxiety is associated with hidden state inference during aversive reversal learning. *Nature Communications*, preprint version: https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf  
+# {bdg-danger}`anxiety` {bdg-primary}`uncertainty` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`
+# 
+# Morriss, J., Abend, R., **Zika, O.**, Bradford, D. E., & Mertens, G. (2023). Neural and psychophysiological markers of intolerance of uncertainty. https://doi.org/10.1016/j.ijpsycho.2023.01.003   
 # {bdg-primary}`uncertainty` 
 # 
 # 
 # Koch, C., **Zika, O.**, & Schuck, N. W. (2022, *preprint*). Influence of surprise on reinforcement learning in younger and older adults. https://doi.org/10.31234/osf.io/unx5y  
 # {bdg-dark}`ageing` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`
-# 
-# 
-# **Zika, O.**, Wiech, K. A., Reinecke, A., Browning, M. and Schuck, N. W. (2022, *preprint*). Trait anxiety is associated with hidden state inference during aversive reversal learning. https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf  
-# {bdg-danger}`anxiety` {bdg-primary}`uncertainty` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`
 # 
 # 
 # Gagne, Ch., **Zika, O.**, Dayan, P. and Bishop, S. J. (2020). Impaired adaptation of learning to contingency volatility in internalizing psychopathology. *eLife*, 9:e61387. https://doi.org/10.7554/eLife.61387    
