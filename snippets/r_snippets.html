@@ -395,8 +395,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-funcs">
-   basic funcs
+  <a class="reference internal nav-link" href="#plotting">
+   Plotting
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -413,7 +413,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-manipulations">
-   data manipulations
+   Data manipulations
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -441,8 +441,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#basic-funcs">
-   basic funcs
+  <a class="reference internal nav-link" href="#plotting">
+   Plotting
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -459,7 +459,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-manipulations">
-   data manipulations
+   Data manipulations
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -479,12 +479,11 @@ title="Print to PDF"
                 
   <section id="different-useful-snippets-in-r">
 <h1>Different useful snippets in R<a class="headerlink" href="#different-useful-snippets-in-r" title="Permalink to this headline">#</a></h1>
-<section id="basic-funcs">
-<h2>basic funcs<a class="headerlink" href="#basic-funcs" title="Permalink to this headline">#</a></h2>
-<p><strong>standard error</strong></p>
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
+<section id="plotting">
+<h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">#</a></h2>
+<p><strong>Regression coefficients with <code class="docutils literal notranslate"><span class="pre">parameters</span></code> package</strong>
+Sometimes one wants to change the color of the plots, e.g. according to significance</p>
+<script src="https://gist.github.com/ozika/422d004618cb9b55e21c333341367213.js"></script>
 </section>
 <section id="linear-models">
 <h2>linear models<a class="headerlink" href="#linear-models" title="Permalink to this headline">#</a></h2>
@@ -494,7 +493,7 @@ title="Print to PDF"
 </section>
 </section>
 <section id="data-manipulations">
-<h2>data manipulations<a class="headerlink" href="#data-manipulations" title="Permalink to this headline">#</a></h2>
+<h2>Data manipulations<a class="headerlink" href="#data-manipulations" title="Permalink to this headline">#</a></h2>
 <p>Split continuous to categorical at specific breakponts</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">tdf</span><span class="o">&lt;-</span> <span class="n">tdf</span> <span class="o">%&gt;%</span> 
   <span class="nf">mutate</span><span class="p">(</span>
