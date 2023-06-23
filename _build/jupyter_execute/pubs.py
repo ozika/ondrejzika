@@ -18,13 +18,15 @@
 # 
 # ### Journal articles
 # 
-# **Zika, O.** (2023, preprint). The relationship between latent state inference and intolerance of uncertainty.
+# **Zika, O.** (2023, preprint). The relationship between latent state inference and (intolerance of) uncertainty. [https://psyarxiv.com/gb8kn/](https://psyarxiv.com/gb8kn/) | {download}`PDF<docs/pubs/Zika_Commentary_2023.pdf>` | 
 # {bdg-primary}`uncertainty` {bdg-warning}`modelling` {bdg-secondary}`learning and choice` 
 # 
-# **Zika, O.**, Appel, J., Klinge, C., Shkreli, L., Browning, M., Wiech, K. A. and Reinecke, A. (*submitted*). Reduction of aversive learning rates by Angiotensin II antagonist losartan.  
+# **Zika, O.**, Appel, J., Klinge, C., Shkreli, L., Browning, M., Wiech, K. A. and Reinecke, A. (2023, preprint). Reduction of aversive learning rates by Angiotensin II antagonist losartan. [https://psyarxiv.com/e5wdv/](https://psyarxiv.com/e5wdv/) | {download}`PDF<docs/pubs/Zikaetal_Losartan_paper_Jan2023.pdf>` |
 # {bdg-info}`mental health` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`  
 # 
-# **Zika, O.**, Wiech, K. A., Reinecke, A., Browning, M. and Schuck, N. W. (2023). Trait anxiety is associated with hidden state inference during aversive reversal learning. *Nature Communications*, preprint version: https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf  
+# **Zika, O.**, Wiech, K. A., Reinecke, A., Browning, M. and Schuck, N. W. (2023). Trait anxiety is associated with hidden state inference during aversive reversal learning. *Nature Communications*, [accepted version](https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf) | {download}`PDF<docs/pubs/Zika_Nat_Comms.pdf>` |
+# 
+# preprint version: https://www.biorxiv.org/content/early/2022/04/28/2022.04.01.483303.full.pdf  
 # {bdg-danger}`anxiety` {bdg-primary}`uncertainty` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`
 # 
 # Morriss, J., Abend, R., **Zika, O.**, Bradford, D. E., & Mertens, G. (2023). Neural and psychophysiological markers of intolerance of uncertainty. https://doi.org/10.1016/j.ijpsycho.2023.01.003   

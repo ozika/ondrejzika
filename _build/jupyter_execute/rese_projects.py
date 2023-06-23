@@ -13,14 +13,15 @@
 # {bdg-secondary}`learning and choice`
 # 
 # 
-# ### Ongoing projects
+# ## Projects and areas of interest
+# 
 # 
 # #### {fas}`bolt;boltcolor` **Anxiety, uncertainty and structure learning of aversive environments**  
 # {bdg-warning}`modelling`
 # {bdg-danger}`anxiety`
 # {bdg-secondary}`learning and choice`
 # {bdg-primary}`uncertainty`  
-# In this project we investigate how people varying in trait anxiety learn and how they represent aversive environments. We use a task characterised by alternating periods of relative safety and threat. To make predictions about probability of receiving shock on the next trial, one can either keep track of current shock probability in a trial-by-trial manner (using reinforcement learning-like mechanism), or, alternatively, one can learn that there are regular changes in shock probabilities and leverage this information to make more accurate predictions. Using computational models to characterise the two processes, we found that people higher in trait anxiety have a tendency to extract such latent structures. While this means that high trait anxious participants are better at following the experimental contingencies, it might also mean that they are more likely to experience return-of-fear phenomena such as spontaneous recovery or reinstatement. [**Zika et al., 2022**](https://www.biorxiv.org/content/10.1101/2022.04.01.483303v4.abstract)
+# In this project we investigate how people varying in trait anxiety learn and how they represent aversive environments. We use a task characterised by alternating periods of relative safety and threat. To make predictions about probability of receiving shock on the next trial, one can either keep track of current shock probability in a trial-by-trial manner (using reinforcement learning-like mechanism), or, alternatively, one can learn that there are regular changes in shock probabilities and leverage this information to make more accurate predictions. Using computational models to characterise the two processes, we found that people higher in trait anxiety have a tendency to extract such latent structures. While this means that high trait anxious participants are better at following the experimental contingencies, it might also mean that they are more likely to experience return-of-fear phenomena such as spontaneous recovery or reinstatement. [**Zika, Wiech, Reinecke, Browning and Schuck, 2023**, *Nature Comms*](https://www.biorxiv.org/content/10.1101/2022.04.01.483303v4.abstract)
 # 
 # ```{note}
 # **People** [Nico Schuck](https://schucklab.gitlab.io/), [Katja Wiech](https://www.ndcn.ox.ac.uk/team/katja-wiech), [Michael Browning](https://www.psych.ox.ac.uk/team/michael-browning) and [Andrea Reinecke](https://www.psych.ox.ac.uk/team/andrea-reinecke) 
@@ -47,10 +48,10 @@
 # #### {fas}`pills; pillcolor` **The effect of angiotensin-II receptor blockade on aversive learning**   
 # {bdg-warning}`modelling`
 # {bdg-secondary}`learning and choice`  
-# The commonly prescribed blood pressure medication losartan (angiotensin-II receptor blocker) has recently been linked to reduction in fear learning, including lower chance of developing PTSD in war veterans. Here, we use double-blind design and probabilistic aversive learning task over three sessions to investigate the role of losartan in aversive learning. 
+# The commonly prescribed blood pressure medication losartan (angiotensin-II receptor blocker) has recently been linked to reduction in fear learning, including lower chance of developing PTSD in war veterans. Here, we use double-blind design and probabilistic aversive learning task over three sessions to investigate the role of losartan in aversive learning. [**Zika, Appel, Klinge, Shkreli, Browning and Reinecket, 2023**, *PsyArXiv*](https://psyarxiv.com/e5wdv/)
 # 
 # ```{note}
-# **People** [Andrea Reinecke](https://www.psych.ox.ac.uk/team/andrea-reinecke)
+# **People** [Andrea Reinecke](https://www.psych.ox.ac.uk/team/andrea-reinecke), [Katja Wiech](https://www.ndcn.ox.ac.uk/team/katja-wiech), [Michael Browning](https://www.psych.ox.ac.uk/team/michael-browning)
 # 
 # 
 # ```
@@ -68,7 +69,7 @@
 # ```
 # ---
 # 
-# #### {fas}`ghost;gencolor` **Aversive generalisation and replay**
+# #### {fas}`ghost;gencolor` **Aversive generalisation, representation and replay**
 # {bdg-dark-line}`generalisation`
 # {bdg-warning}`modelling`
 # {bdg-danger}`anxiety`
@@ -81,7 +82,7 @@
 # 
 # ```
 # 
-# #### {fas}`graduation-cap` **Context similarity and rule generalisation in school children**  
+# #### {fas}`graduation-cap` **Context similarity and rule generalisation in school-aged children**  
 # {bdg-dark-line}`generalisation`
 # {bdg-warning}`modelling`  
 # How does the similarity of learning and generalisation contexts impact rule generalisation in 6-15 y.o. children? This project is funded by [The Jacobs Foundation](https://jacobsfoundation.org/).
@@ -104,17 +105,8 @@
 # 
 # 
 # ```
-# --- 
-# 
-# ### Future projects 
-# Topics that I think about but didn't get around to doing yet - if you find any of this interesting I would be more than happy to chat! 
 # 
 # 
-# **Anxiety and optimality**  
-# Arguably, anxiety is an adaptive mechanism - too little of if leads to lack of vigilance and motivation, too much of it leads to excessive avoidance, threat overprediction and overgeneralisation. Therefore, we should be able to identify a non-linear relationship between trait anxiety and *optimal* task performance. Somewhat surprisingly, this hasn't been reported empirically (maybe it has, but I haven't come across such work). One issue is that our methods favour linear relationships and non-linearities are often not tested for. Another issue is that many studies don't combine clinical with non-clinical samples (i.e., the relationship is linear because of binarization or because high anxiety is missing). Third, we don't really assess tasks for *optimality* - anxiety group is often observed *to be different* in some way. This is then interpreted as evidence towards *sub-*optimal performance. It would be great to look at these a bit more closely using a large sample, focusing on optimality and non-linearity. 
-# 
-# 
-# **Reconciling uncertainty-based models with structure learning**  
 # 
 # 
 #  

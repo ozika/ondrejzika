@@ -58,7 +58,7 @@ df = df.drop(columns=["Month", "Day"])
 # 
 # It seems like there are some missing data. 
 
-# In[3]:
+# In[58]:
 
 
 ax = sns.lineplot(data=df, x="AnnDay", y="AvgTemperature", hue="Country", style="Year")
@@ -70,7 +70,7 @@ ax = sns.lineplot(data=df, x="AnnDay", y="AvgTemperature", hue="Country", style=
 # #### Clean data 
 # I will just remove the `-99` values and interpolate the time series. To do this, I will go back to the `rawdf` since data were already averaged. 
 
-# In[4]:
+# In[59]:
 
 
 # Interpolate missing data
@@ -92,7 +92,7 @@ ax = sns.lineplot(data=df, x="AnnDay", y="AvgTemperature", hue="Country", style=
 
 
 
-# In[5]:
+# In[60]:
 
 
 # Rearrange data so that each column is Country-Year combination
@@ -111,7 +111,7 @@ df.columns = [x+str(y) for  (x, y) in df.columns.values]
 # 
 # 
 
-# In[6]:
+# In[66]:
 
 
 ## Standard correlation
@@ -158,7 +158,7 @@ ax[1].set_title("Partial correlation")
 # The plot seems to make sense, the notrther countries tend to correlate highly in their 2001 temperature. 
 # 
 
-# In[7]:
+# In[62]:
 
 
 # stack data
@@ -207,7 +207,7 @@ nx.draw_networkx_edge_labels(G, pos=nx.circular_layout(G), edge_labels=edge_labe
 
 # #### Partial correlation graph
 
-# In[8]:
+# In[65]:
 
 
 # stack data
