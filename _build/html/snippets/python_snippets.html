@@ -451,6 +451,11 @@ title="Print to PDF"
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatter-plot-with-lmplot-and-correlation-for-each-group">
+     Scatter plot with lmplot and correlation for each group
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#legend-manipulation">
      Legend manipulation
     </a>
@@ -461,6 +466,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#statistics">
    Statistics
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unviersal-correlation-fucntion-to-add-to-plots">
+     Unviersal correlation fucntion to add to plots
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mixed-anova-with-posthocs-in-python">
+     Mixed ANOVA with posthocs in Python
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -511,6 +528,11 @@ title="Print to PDF"
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scatter-plot-with-lmplot-and-correlation-for-each-group">
+     Scatter plot with lmplot and correlation for each group
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#legend-manipulation">
      Legend manipulation
     </a>
@@ -521,6 +543,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#statistics">
    Statistics
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unviersal-correlation-fucntion-to-add-to-plots">
+     Unviersal correlation fucntion to add to plots
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mixed-anova-with-posthocs-in-python">
+     Mixed ANOVA with posthocs in Python
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -554,6 +588,17 @@ title="Print to PDF"
 </section>
 <section id="plotting-seaborn-and-mpl">
 <h1>Plotting (Seaborn and MPL)<a class="headerlink" href="#plotting-seaborn-and-mpl" title="Permalink to this headline">#</a></h1>
+<section id="scatter-plot-with-lmplot-and-correlation-for-each-group">
+<h2>Scatter plot with lmplot and correlation for each group<a class="headerlink" href="#scatter-plot-with-lmplot-and-correlation-for-each-group" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">cols</span><span class="o">=</span> <span class="p">[</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">lidx</span><span class="p">,</span> <span class="n">lvl</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">]):</span>
+    <span class="n">ttdf</span> <span class="o">=</span> <span class="n">behdf</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">behdf</span><span class="p">[</span><span class="s2">&quot;TF2_PhysiolAnx_ms&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="n">lvl</span><span class="p">])]</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">ttdf</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;prob_safe&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;shnosh_diff_mflr&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">cols</span><span class="p">[</span><span class="n">lidx</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+    <span class="n">corrfunc</span><span class="p">(</span><span class="n">ttdf</span><span class="p">[</span><span class="s2">&quot;prob_safe&quot;</span><span class="p">],</span> <span class="n">ttdf</span><span class="p">[</span><span class="s2">&quot;shnosh_diff_mflr&quot;</span><span class="p">],</span> <span class="n">tests</span><span class="o">=</span><span class="p">[</span> <span class="s2">&quot;spearman&quot;</span><span class="p">],</span> <span class="n">drop_missing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">xanchor</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="mi">0</span><span class="o">+</span><span class="n">lidx</span><span class="o">*</span><span class="mf">0.06</span><span class="p">,</span> <span class="n">boxcolor</span><span class="o">=</span><span class="n">cols</span><span class="p">[</span><span class="n">lidx</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
 <section id="legend-manipulation">
 <h2>Legend manipulation<a class="headerlink" href="#legend-manipulation" title="Permalink to this headline">#</a></h2>
 <p>Change labels on existing legend</p>
@@ -569,6 +614,46 @@ title="Print to PDF"
 </section>
 <section id="statistics">
 <h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h1>
+<section id="unviersal-correlation-fucntion-to-add-to-plots">
+<h2>Unviersal correlation fucntion to add to plots<a class="headerlink" href="#unviersal-correlation-fucntion-to-add-to-plots" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">corrfunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tests</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pearson&quot;</span><span class="p">],</span> <span class="n">drop_missing</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">xanchor</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">yanchor</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">randomanchor</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">boxcolor</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+    
+    <span class="k">if</span> <span class="n">randomanchor</span><span class="p">:</span>
+        <span class="n">yanchor</span><span class="o">=</span><span class="mf">0.1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
+        
+        
+    <span class="k">if</span> <span class="n">drop_missing</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)})</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">]</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span>
+
+    <span class="c1">#[&quot;pearson&quot;, &quot;spearman&quot;, &quot;kendall&quot;, &quot;distcor&quot;]</span>
+    
+    <span class="n">ycoord</span> <span class="o">=</span> <span class="n">yanchor</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">tests</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.05</span>
+    <span class="k">if</span> <span class="s2">&quot;pearson&quot;</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+        <span class="n">r</span><span class="p">,</span><span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">pearsonr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="n">ycoord</span><span class="p">,</span> <span class="s2">&quot;Pearson r = </span><span class="si">{:.2f}</span><span class="s2">, p=</span><span class="si">{:.2g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">p</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
+        <span class="n">ycoord</span> <span class="o">=</span> <span class="n">ycoord</span><span class="o">-</span><span class="mf">0.1</span>
+        
+    <span class="k">if</span> <span class="s2">&quot;spearman&quot;</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+        <span class="n">r</span><span class="p">,</span><span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">spearmanr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="n">ycoord</span><span class="p">,</span> <span class="s2">&quot;Spearman r = </span><span class="si">{:.2f}</span><span class="s2">, p=</span><span class="si">{:.2g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">p</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
+        <span class="n">ycoord</span> <span class="o">=</span> <span class="n">ycoord</span><span class="o">-</span><span class="mf">0.1</span>
+    
+    <span class="k">if</span> <span class="s2">&quot;distcor&quot;</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+        <span class="n">r2</span> <span class="o">=</span> <span class="n">Dcorr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="s2">&quot;Dist. corr = </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="mixed-anova-with-posthocs-in-python">
+<h2>Mixed ANOVA with posthocs in Python<a class="headerlink" href="#mixed-anova-with-posthocs-in-python" title="Permalink to this headline">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pingouin</span> <span class="k">as</span> <span class="nn">pg</span>
 <span class="kn">from</span> <span class="nn">statsmodels.stats.multitest</span> <span class="kn">import</span> <span class="n">multipletests</span>
 <span class="n">aov</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">mixed_anova</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">stdf</span><span class="p">,</span> <span class="n">dv</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">between</span><span class="o">=</span><span class="s1">&#39;cl&#39;</span><span class="p">,</span> <span class="n">within</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span>
@@ -610,6 +695,7 @@ title="Print to PDF"
 
 </pre></div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

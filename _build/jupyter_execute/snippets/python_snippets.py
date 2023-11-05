@@ -20,6 +20,17 @@
 
 # ## Plotting (Seaborn and MPL)
 # 
+# ### Scatter plot with lmplot and correlation for each group
+# 
+# ```python
+# f, ax = plt.subplots(1,1,figsize=(5,5))
+# cols= ["black", "red"]
+# for lidx, lvl in enumerate(["high", "low"]):
+#     ttdf = behdf.loc[behdf["TF2_PhysiolAnx_ms"].isin([lvl])]
+#     sns.regplot(data=ttdf, x="prob_safe", y="shnosh_diff_mflr", color=cols[lidx], ax=ax)
+#     corrfunc(ttdf["prob_safe"], ttdf["shnosh_diff_mflr"], tests=[ "spearman"], drop_missing=True, xanchor=0.4, yanchor=0+lidx*0.06, boxcolor=cols[lidx])
+# ```
+# 
 # ### Legend manipulation
 # 
 # Change labels on existing legend
@@ -35,6 +46,45 @@
 # 
 
 # ## Statistics
+# 
+# ### Unviersal correlation fucntion to add to plots
+# ```python
+# def corrfunc(x, y, tests=["pearson"], drop_missing=False, ax=None, xanchor=0.4, yanchor = 0.1, randomanchor=False, boxcolor='purple', **kws):
+#     if (ax is None):
+#         ax = plt.gca()
+#     
+#     if randomanchor:
+#         yanchor=0.1 + np.random.normal(0, 0.2)
+#         
+#         
+#     if drop_missing:
+#         d = pd.DataFrame({'x':np.array(x), 'y':np.array(y)})
+#         d = d.dropna()
+#         x = d["x"]
+#         y = d["y"]
+# 
+#     #["pearson", "spearman", "kendall", "distcor"]
+#     
+#     ycoord = yanchor*len(tests) + 0.05
+#     if "pearson" in tests:
+#         r,p = stats.pearsonr(x, y)
+#         t = plt.text(xanchor, ycoord, "Pearson r = {:.2f}, p={:.2g}".format(r,p), transform=ax.transAxes, fontsize=10)
+#         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
+#         ycoord = ycoord-0.1
+#         
+#     if "spearman" in tests:
+#         r,p = stats.spearmanr(x, y)
+#         t = plt.text(xanchor, ycoord, "Spearman r = {:.2f}, p={:.2g}".format(r,p), transform=ax.transAxes, fontsize=10)
+#         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
+#         ycoord = ycoord-0.1
+#     
+#     if "distcor" in tests:
+#         r2 = Dcorr(x,y)
+#         t = plt.text(xanchor, 0.05, "Dist. corr = {:.2f}".format(r2), transform=ax.transAxes, fontsize=10)
+#         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
+# ```
+# 
+# ### Mixed ANOVA with posthocs in Python
 # ```python
 # import pingouin as pg
 # from statsmodels.stats.multitest import multipletests
@@ -76,3 +126,5 @@
 # pg.print_table(resdf)
 # 
 # ```
+
+# 

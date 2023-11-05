@@ -43,5 +43,12 @@
 # *University of Oxford, Department of Law*
 # 
 # 
+# ---
+# 
+# #### Public engagement
+# 
+# **2018:  In2Science programe**
+# *Had a great time hosting Alex Davies in the lab, doing an aversive learning experiment and full analysis in 1 week together!* [public post](https://www.ndcn.ox.ac.uk/news/young-people-get-a-taste-of-working-in-our-labs) 
+# 
 # 
 # 
