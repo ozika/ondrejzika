@@ -45,10 +45,10 @@
 # 
 # ---
 # 
-# #### {fas}`pills; pillcolor` **The effect of angiotensin-II receptor blockade on aversive learning**   
+# #### {fas}`pills; pillcolor` **The effect of angiotensin-II receptor blockade on aversive learning: randomised controlled trial**   
 # {bdg-warning}`modelling`
 # {bdg-secondary}`learning and choice`  
-# The commonly prescribed blood pressure medication losartan (angiotensin-II receptor blocker) has recently been linked to reduction in fear learning, including lower chance of developing PTSD in war veterans. Here, we use double-blind design and probabilistic aversive learning task over three sessions to investigate the role of losartan in aversive learning. [**Zika, Appel, Klinge, Shkreli, Browning and Reinecket, 2023**, *PsyArXiv*](https://psyarxiv.com/e5wdv/)
+# The commonly prescribed blood pressure medication losartan (angiotensin-II receptor blocker) has recently been linked to reduction in fear learning, including lower chance of developing PTSD in war veterans. Here, we use double-blind design and probabilistic aversive learning task over three sessions to investigate the role of losartan in aversive learning. [**Zika, Appel, Klinge, Shkreli, Browning and Reinecket, 2024**, *Biological Psychiatry*](https://doi.org/10.1016/j.biopsych.2024.01.020)
 # 
 # ```{note}
 # **People** [Andrea Reinecke](https://www.psych.ox.ac.uk/team/andrea-reinecke), [Katja Wiech](https://www.ndcn.ox.ac.uk/team/katja-wiech), [Michael Browning](https://www.psych.ox.ac.uk/team/michael-browning)
