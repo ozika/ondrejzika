@@ -13,3 +13,12 @@ P.S.: [**ř**](https://www.youtube.com/watch?v=V9LQDTiDcrA) is a great sound, I 
 // add this zika-related anxiety https://pubmed.ncbi.nlm.nih.gov/29063232/
 -->
 
+# News 
+
+**July 2024: Talk at BAP 2024!**
+
+I recently gave a short interview to [Mental  Elf](https://www.nationalelfservice.net/mental-health/) about my talk at the British Association for Psychopharmacology Annual Meeting (BAP). We briefly discuss how uncertainty generates moments of ambiguity about the causal structure of the world and how perhaps anxious individuals tend to fill in information to reduce the uneasing sense of uncertainty. We also discuss how this can sometimes result in wrong interpretation of for example social cues in anxiety. This is largely based on our recent [paper](https://www.nature.com/articles/s41467-023-39825-3).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b9wdgMfBMOE?si=wOy1doAdfAiREFvj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
