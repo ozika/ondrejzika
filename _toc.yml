@@ -31,8 +31,10 @@ parts:
       - file: articles/plotting_graphs_with_python/plotting_graphs_with_python
     - file: snippets
       sections:
-      - file: snippets/r_snippets
       - file: snippets/ssh
       - file: snippets/virtualenv
+      - file: snippets/r_snippets
+      - file: snippets/python_snippets
+      - file: snippets/statistics
     #- file: tutorials
     #- file: test

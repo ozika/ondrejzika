@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Python snippets
 # ## Pandas tricks
 # 
 # ### DF Transformations
@@ -45,9 +46,9 @@
 # ```
 # 
 
-# ## Statistics
+# ## Statistics in Python
 # 
-# ### Unviersal correlation fucntion to add to plots
+# ### Universal correlation function to add to plots
 # ```python
 # def corrfunc(x, y, tests=["pearson"], drop_missing=False, ax=None, xanchor=0.4, yanchor = 0.1, randomanchor=False, boxcolor='purple', **kws):
 #     if (ax is None):
@@ -77,11 +78,34 @@
 #         t = plt.text(xanchor, ycoord, "Spearman r = {:.2f}, p={:.2g}".format(r,p), transform=ax.transAxes, fontsize=10)
 #         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
 #         ycoord = ycoord-0.1
+# 
+#     if "xicor" in tests:
+#         r = xicor(x,y, ties=True)
+#         t = plt.text(xanchor, 0.05, "xicor. xi= {:.2f}".format(r), transform=ax.transAxes, fontsize=10)
+#         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
+#         ycoord = ycoord-0.1
 #     
 #     if "distcor" in tests:
 #         r2 = Dcorr(x,y)
 #         t = plt.text(xanchor, 0.05, "Dist. corr = {:.2f}".format(r2), transform=ax.transAxes, fontsize=10)
 #         t.set_bbox(dict(facecolor='white', alpha=1, edgecolor=boxcolor))
+# 
+# # More info in xicor: https://arxiv.org/abs/1909.10140
+# def xicor(X, Y, ties=True):
+#     random.seed(42)
+#     n = len(X)
+#     order = array([i[0] for i in sorted(enumerate(X), key=lambda x: x[1])])
+#     if ties:
+#         l = array([sum(y >= Y[order]) for y in Y[order]])
+#         r = l.copy()
+#         for j in range(n):
+#             if sum([r[j] == r[i] for i in range(n)]) > 1:
+#                 tie_index = array([r[j] == r[i] for i in range(n)])
+#                 r[tie_index] = random.choice(r[tie_index] - arange(0, sum([r[j] == r[i] for i in range(n)])), sum(tie_index), replace=False)
+#         return 1 - n*sum( abs(r[1:] - r[:n-1]) ) / (2*sum(l*(n - l)))
+#     else:
+#         r = array([sum(y >= Y[order]) for y in Y[order]])
+#         return 1 - 3 * sum( abs(r[1:] - r[:n-1]) ) / (n**2 - 1)
 # ```
 # 
 # ### Mixed ANOVA with posthocs in Python

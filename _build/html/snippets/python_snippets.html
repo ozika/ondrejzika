@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pandas tricks</title>
+    <title>Python snippets</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -56,6 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Statistics" href="statistics.html" />
+    <link rel="prev" title="Different useful snippets in R" href="r_snippets.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -219,7 +221,7 @@ const thebe_selector_output = ".output, .cell_output"
   posts and code
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../blogposts.html">
    Posts
@@ -237,21 +239,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../snippets.html">
    Snippets
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="r_snippets.html">
-     Different useful snippets in R
-    </a>
-   </li>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="ssh.html">
      Setting up SSH keys
@@ -260,6 +257,21 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="virtualenv.html">
      Virtual environment in Python/R
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="r_snippets.html">
+     Different useful snippets in R
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Python snippets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="statistics.html">
+     Statistics
     </a>
    </li>
   </ul>
@@ -421,58 +433,58 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas-tricks">
    Pandas tricks
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#df-transformations">
      DF Transformations
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#wide-to-long">
        Wide to long
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#lambda-function">
      Lambda function
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plotting-seaborn-and-mpl">
    Plotting (Seaborn and MPL)
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scatter-plot-with-lmplot-and-correlation-for-each-group">
      Scatter plot with lmplot and correlation for each group
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#legend-manipulation">
      Legend manipulation
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#statistics">
-   Statistics
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistics-in-python">
+   Statistics in Python
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unviersal-correlation-fucntion-to-add-to-plots">
-     Unviersal correlation fucntion to add to plots
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#universal-correlation-function-to-add-to-plots">
+     Universal correlation function to add to plots
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mixed-anova-with-posthocs-in-python">
      Mixed ANOVA with posthocs in Python
     </a>
@@ -488,7 +500,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pandas tricks</h1>
+                <h1>Python snippets</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -498,58 +510,58 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas-tricks">
    Pandas tricks
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#df-transformations">
      DF Transformations
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#wide-to-long">
        Wide to long
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#lambda-function">
      Lambda function
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plotting-seaborn-and-mpl">
    Plotting (Seaborn and MPL)
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scatter-plot-with-lmplot-and-correlation-for-each-group">
      Scatter plot with lmplot and correlation for each group
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#legend-manipulation">
      Legend manipulation
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#statistics">
-   Statistics
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#statistics-in-python">
+   Statistics in Python
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unviersal-correlation-fucntion-to-add-to-plots">
-     Unviersal correlation fucntion to add to plots
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#universal-correlation-function-to-add-to-plots">
+     Universal correlation function to add to plots
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mixed-anova-with-posthocs-in-python">
      Mixed ANOVA with posthocs in Python
     </a>
@@ -566,19 +578,21 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="pandas-tricks">
-<h1>Pandas tricks<a class="headerlink" href="#pandas-tricks" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="python-snippets">
+<h1>Python snippets<a class="headerlink" href="#python-snippets" title="Permalink to this headline">#</a></h1>
+<section id="pandas-tricks">
+<h2>Pandas tricks<a class="headerlink" href="#pandas-tricks" title="Permalink to this headline">#</a></h2>
 <section id="df-transformations">
-<h2>DF Transformations<a class="headerlink" href="#df-transformations" title="Permalink to this headline">#</a></h2>
+<h3>DF Transformations<a class="headerlink" href="#df-transformations" title="Permalink to this headline">#</a></h3>
 <section id="wide-to-long">
-<h3>Wide to long<a class="headerlink" href="#wide-to-long" title="Permalink to this headline">#</a></h3>
+<h4>Wide to long<a class="headerlink" href="#wide-to-long" title="Permalink to this headline">#</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tdf</span> <span class="o">=</span> <span class="n">tdf</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Session&quot;</span><span class="p">,</span> <span class="s2">&quot;PROLIFICID&quot;</span><span class="p">],</span> <span class="n">value_vars</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="lambda-function">
-<h2>Lambda function<a class="headerlink" href="#lambda-function" title="Permalink to this headline">#</a></h2>
+<h3>Lambda function<a class="headerlink" href="#lambda-function" title="Permalink to this headline">#</a></h3>
 <p>Take first value of each subgroup</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Session&quot;</span><span class="p">)[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]))</span>
 
@@ -587,9 +601,9 @@ title="Print to PDF"
 </section>
 </section>
 <section id="plotting-seaborn-and-mpl">
-<h1>Plotting (Seaborn and MPL)<a class="headerlink" href="#plotting-seaborn-and-mpl" title="Permalink to this headline">#</a></h1>
+<h2>Plotting (Seaborn and MPL)<a class="headerlink" href="#plotting-seaborn-and-mpl" title="Permalink to this headline">#</a></h2>
 <section id="scatter-plot-with-lmplot-and-correlation-for-each-group">
-<h2>Scatter plot with lmplot and correlation for each group<a class="headerlink" href="#scatter-plot-with-lmplot-and-correlation-for-each-group" title="Permalink to this headline">#</a></h2>
+<h3>Scatter plot with lmplot and correlation for each group<a class="headerlink" href="#scatter-plot-with-lmplot-and-correlation-for-each-group" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">cols</span><span class="o">=</span> <span class="p">[</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">lidx</span><span class="p">,</span> <span class="n">lvl</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">]):</span>
@@ -600,7 +614,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="legend-manipulation">
-<h2>Legend manipulation<a class="headerlink" href="#legend-manipulation" title="Permalink to this headline">#</a></h2>
+<h3>Legend manipulation<a class="headerlink" href="#legend-manipulation" title="Permalink to this headline">#</a></h3>
 <p>Change labels on existing legend</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">l</span>  <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span><span class="o">.</span><span class="n">texts</span><span class="p">,</span> <span class="n">new_labels</span><span class="p">):</span>
     <span class="n">t</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
@@ -612,10 +626,10 @@ title="Print to PDF"
 </div>
 </section>
 </section>
-<section id="statistics">
-<h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h1>
-<section id="unviersal-correlation-fucntion-to-add-to-plots">
-<h2>Unviersal correlation fucntion to add to plots<a class="headerlink" href="#unviersal-correlation-fucntion-to-add-to-plots" title="Permalink to this headline">#</a></h2>
+<section id="statistics-in-python">
+<h2>Statistics in Python<a class="headerlink" href="#statistics-in-python" title="Permalink to this headline">#</a></h2>
+<section id="universal-correlation-function-to-add-to-plots">
+<h3>Universal correlation function to add to plots<a class="headerlink" href="#universal-correlation-function-to-add-to-plots" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">corrfunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tests</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;pearson&quot;</span><span class="p">],</span> <span class="n">drop_missing</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">xanchor</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">yanchor</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">randomanchor</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">boxcolor</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kws</span><span class="p">):</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
         <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
@@ -644,16 +658,39 @@ title="Print to PDF"
         <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="n">ycoord</span><span class="p">,</span> <span class="s2">&quot;Spearman r = </span><span class="si">{:.2f}</span><span class="s2">, p=</span><span class="si">{:.2g}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">p</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
         <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
         <span class="n">ycoord</span> <span class="o">=</span> <span class="n">ycoord</span><span class="o">-</span><span class="mf">0.1</span>
+
+    <span class="k">if</span> <span class="s2">&quot;xicor&quot;</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">xicor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">ties</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="s2">&quot;xicor. xi= </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
+        <span class="n">ycoord</span> <span class="o">=</span> <span class="n">ycoord</span><span class="o">-</span><span class="mf">0.1</span>
     
     <span class="k">if</span> <span class="s2">&quot;distcor&quot;</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
         <span class="n">r2</span> <span class="o">=</span> <span class="n">Dcorr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xanchor</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="s2">&quot;Dist. corr = </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r2</span><span class="p">),</span> <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
         <span class="n">t</span><span class="o">.</span><span class="n">set_bbox</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">boxcolor</span><span class="p">))</span>
+
+<span class="c1"># More info in xicor: https://arxiv.org/abs/1909.10140</span>
+<span class="k">def</span> <span class="nf">xicor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">ties</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])])</span>
+    <span class="k">if</span> <span class="n">ties</span><span class="p">:</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="nb">sum</span><span class="p">(</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="n">Y</span><span class="p">[</span><span class="n">order</span><span class="p">])</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">Y</span><span class="p">[</span><span class="n">order</span><span class="p">]])</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">sum</span><span class="p">([</span><span class="n">r</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">tie_index</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="n">r</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
+                <span class="n">r</span><span class="p">[</span><span class="n">tie_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="n">tie_index</span><span class="p">]</span> <span class="o">-</span> <span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">sum</span><span class="p">([</span><span class="n">r</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])),</span> <span class="nb">sum</span><span class="p">(</span><span class="n">tie_index</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">n</span><span class="o">*</span><span class="nb">sum</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">-</span> <span class="n">r</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="nb">sum</span><span class="p">(</span><span class="n">l</span><span class="o">*</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">l</span><span class="p">)))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="nb">sum</span><span class="p">(</span><span class="n">y</span> <span class="o">&gt;=</span> <span class="n">Y</span><span class="p">[</span><span class="n">order</span><span class="p">])</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">Y</span><span class="p">[</span><span class="n">order</span><span class="p">]])</span>
+        <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">*</span> <span class="nb">sum</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">-</span> <span class="n">r</span><span class="p">[:</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="mixed-anova-with-posthocs-in-python">
-<h2>Mixed ANOVA with posthocs in Python<a class="headerlink" href="#mixed-anova-with-posthocs-in-python" title="Permalink to this headline">#</a></h2>
+<h3>Mixed ANOVA with posthocs in Python<a class="headerlink" href="#mixed-anova-with-posthocs-in-python" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pingouin</span> <span class="k">as</span> <span class="nn">pg</span>
 <span class="kn">from</span> <span class="nn">statsmodels.stats.multitest</span> <span class="kn">import</span> <span class="n">multipletests</span>
 <span class="n">aov</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">mixed_anova</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">stdf</span><span class="p">,</span> <span class="n">dv</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">between</span><span class="o">=</span><span class="s1">&#39;cl&#39;</span><span class="p">,</span> <span class="n">within</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">,</span>
@@ -697,6 +734,7 @@ title="Print to PDF"
 </div>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -725,6 +763,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="r_snippets.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Different useful snippets in R</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="statistics.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Statistics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

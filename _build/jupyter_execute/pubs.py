@@ -18,11 +18,11 @@
 # 
 # ### Journal articles
 # 
-# **Zika, O.**, Appel, J., Klinge, C., Shkreli, L., Browning, M., Wiech, K. A. and Reinecke, A. (2024). Reduction of aversive learning rates by Angiotensin II antagonist losartan: a randomised controlled trial. *Biological Psychiatry* [on-line version](https://doi.org/10.1016/j.biopsych.2024.01.020) | {download}`PDF<docs/pubs/Zikaetal_Losartan_v2.pdf>` | 
+# **Zika, O.**, Appel, J., Klinge, C., Shkreli, L., Browning, M., Wiech, K. A. and Reinecke, A. (2024). Reduction of aversive learning rates by Angiotensin II antagonist losartan: a randomised controlled trial. *Biological Psychiatry* [on-line version](https://doi.org/10.1016/j.biopsych.2024.01.020) | {download}`PDF<docs/pubs/Zika_2024_BP.pdf>` | 
 # {bdg-info}`mental health` {bdg-warning}`modelling` {bdg-secondary}`learning and choice` 
 # 
 # 
-# Koch, C., **Zika, O.**, Bruckner, R. & Schuck, N. W. (2022, *preprint*). Influence of surprise on reinforcement learning in younger and older adults. https://doi.org/10.31234/osf.io/unx5y  
+# Koch, C., **Zika, O.**, Bruckner, R. & Schuck, N. W. (2024, *preprint*). Influence of surprise on reinforcement learning in younger and older adults. https://doi.org/10.31234/osf.io/unx5y  
 # {bdg-dark}`ageing` {bdg-warning}`modelling` {bdg-secondary}`learning and choice`
 # 
 # 

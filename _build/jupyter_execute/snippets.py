@@ -7,7 +7,9 @@
 # 
 # [Setting up SSH key pair](snippets/ssh.md)  
 # [Creating virtual environments in Python and R](snippets/virtualenv.md)  
-# 
+# [Python bits](snippets/python_snippets)
+# [R bits](snippets/r_snippets)
+# [stats](snippets/statistics.md)
 # 
 # 
 
