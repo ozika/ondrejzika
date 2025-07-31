@@ -2,7 +2,7 @@
 
 Hi! 
 
-I am a research scientist at the Karolinska Institute 🇸🇪 and an ERC fellow at Bielefeld University 🇩🇪. My research interests evolve around understanding how uncertainty impacts human decisions and how it relates to aspects of mental health (anxiety, eating disorders) and development. I am also interested in ways in which we can combine AI with longitudinal and multimodal approaches to improve prevention, diagnosis and prediction of treatment outcomes. To study these topics I use range of experimental and computational methods (reinforcement learning, Bayesian models) together with physiology (eye-tracking, skin conductance) and neuroimaging (M/EEG, fMRI). 
+I am a research scientist at the Karolinska Institute 🇸🇪 and an ERC fellow at Bielefeld University 🇩🇪. My research interests evolve around understanding how uncertainty impacts human decisions and how it relates to aspects of mental health (anxiety, eating disorders) and development. I am also interested in ways in which we can combine AI with longitudinal and multimodal approaches to improve prevention and diagnosis of mental health conditions. To study these topics I use range of experimental and computational methods (reinforcement learning, Bayesian models) together with physiology (eye-tracking, skin conductance) and neuroimaging (M/EEG, fMRI). 
 
 I strive to make science inclusive and supportive for everyone. I very much welcome anyone reaching out with any questions or comments. I can be found [here](mailto:zika@mpib-berlin.mpg.de). 
 
