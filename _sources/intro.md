@@ -19,7 +19,10 @@ I am very happy to announce that starting December 2025 I am joining University 
 
 If you are interested in these topics for a postdoc / PhD, do get in touch! 
 
-<img src="docs/img/umi.png" width="100px">
+```{image} img/umi.jpg
+:width: 100px
+
+```
 
 **July 2024: Talk at BAP 2024!**
 
